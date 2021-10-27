@@ -1,0 +1,161 @@
+body {
+    background-color:  #FEBA31;
+    padding: 1rem .5rem; /*1rem equivale a 16px y .5rem = 8px significa: 1rem arriba y abajo y .5rem izquierda y derecha*/
+    font-size: 1.3rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    color: #333333;
+}
+
+html {
+    font-size: 100%; /*16px o 1rem*/
+}
+
+* {
+    box-sizing: border-box; /*es una propiedad CSS para cambiar el modelo de caja por defecto de los navegadores. El ancho de un elemento se altera si se le aplica un borde o un padding. Eso es porque la anchura del elemento que tu especificas con CSS, por defecto no incluye borde ni padding.*/
+}
+
+img {
+    max-width: 100%;
+}
+
+.cabecera {
+    text-align: center;
+    border-bottom: .5rem double #f9f9f9;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.textoCabecera {
+    font-size: 1rem;
+}
+
+.contenedorImagen {
+    position: relative;  
+    text-align: center;
+}
+
+.imagenIntro {
+    border-radius: .75rem;
+}
+
+.imagenCaption {
+    font-size: .75rem;
+    position: relative;
+    color: #FFFFFF
+}
+
+.contenedorLogo {
+    display: block;
+}   
+
+.textoIntro {
+    font-size: 1.2rem;
+    /* font-style: italic;  */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.list-instrucciones {
+    padding: .4rem 0;
+}
+
+.list-instrucciones li:after {
+    display: block;
+    text-align: center;
+    margin: 1rem 0 .5rem 0;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #696565;
+    color: #f9f9f9;
+    width: 60rem;
+}
+
+
+.agregarReceta {
+    text-align: center;
+}
+
+#agregar {
+    font-size: x-large;
+    border-radius: .5rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#agregar:hover {
+    background-color: #dfd7d7;
+}
+
+.body-formulario {
+    background-color: #FEBA31;
+}
+
+h3 {
+    text-align: center;
+}
+
+.add-ingrediente {
+    text-align: center;
+}
+
+.add-paso {
+    text-align: center;
+}
+
+@media screen and (min-width: 750px ) {
+    body {
+        border-left: 4px solid #f9f9f9;
+        border-right: 4px solid #f9f9f9;
+        padding: 1rem 2rem;
+    }
+
+    .contenedorIntro {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .contenedorImagen, .textoIntro {
+        display: table-cell;
+        width: 100%;    
+        vertical-align: middle;
+        text-align: center;   
+    }
+
+    .textoIntro {
+        padding: .5rem;
+        font-size: 1.2rem;
+        text-align: left;
+        position: relative;
+    }
+
+    .ingredientes {
+        font-size: .9rem;
+        /* float: right; */
+        padding: 1rem;
+        margin: 0 0 .5rem 1rem;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: 5px solid #ec9e00
+    }
+
+    .list-ingredientes_items {
+        margin-bottom: 1rem;
+    }
+
+    .comoHacerlo {
+        font-size: 1rem;
+        /* float: right; */
+        padding: 2.5rem;
+        margin: 0 0 .5rem 1rem;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: 5px solid #ec9e00
+    }
+
+    .list-instrucciones_items {
+        margin-bottom: 1rem;
+    }
+}
